@@ -10,6 +10,8 @@
     <meta property="og:title" content="Это моя первая страница...">
 
     <title>Андрей Жуков - Веб-разработчик</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -17,7 +19,7 @@
     <header>
         <nav>
             <div class="logo">
-
+                Андрей Жуков
             </div>
             <div class="menu">
                 <ul>
@@ -41,11 +43,11 @@
         </div>
     </div>
 
-    <div class="profile_info">
+    <div class="profile_aboutme">
         <h2>Обо мне</h2>
         <img src="img/trait.png" alt="#">
         <br>
-        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="#" style="width: 150px;">
+        <img src="img/andreyava.jpg" class="ava" alt="#" style="width: 150px;">
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui quisquam voluptatum quia! Harum ab reiciendis
             minus nisi deleniti beatae officia.</p>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui quisquam voluptatum quia! Harum ab reiciendis
@@ -56,13 +58,13 @@
                 Скачать резюме
             </button>
         </div>
-
     </div>
 
-    <div>
+    <div class="profile_info">
         <h2>Что я умею</h2>
         <img src="img/trait.png" alt="#">
-        <div>
+        <br>
+        <div class="div_center">
             <div>
                 <img src="img/nout.png" alt="#">
                 <h3>Веб-дизайн</h3>
@@ -84,116 +86,151 @@
                 <span>Lorem ipsum dolor sit amet <br>consectetur adipisicing elit. <br>Animi, fuga.</span>
             </div>
         </div>
+    </div>
 
-        <div class="keys">
-            <h2>Кейсы</h2>
-            <img src="img/trait.png" alt="#">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui quisquam voluptatum quia! Harum ab
-                reiciendis
-                minus nisi deleniti beatae officia.</p>
-            <img src="img/banner.png" alt="#">
+    <div class="keys">
+        <h2>Кейсы</h2>
+        <img src="img/trait.png" alt="#">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui quisquam voluptatum quia! Harum ab
+            reiciendis
+            minus nisi deleniti beatae officia.</p>
+        <img src="img/banner.png" alt="#">
+        <br>
+        <div class="info_client">
+            <p> <b>CLIENT:</b><br>какая-то компания </p>
+            <p> <b>WEBSITE:</b><br>https://www.somedomain.com </p>
+        </div>
+        <div class="info_project">
+            <p> <b>Название проекта</b><br>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                <br>Cupiditate, asperiores quibusdam. <br>Molestias, fugit odio dignissimos amet quo consequatur
+                laboriosam incidunt.
+            </p>
+        </div>
+    </div>
+    <input type="submit" value="VISIT LIVE SITE">
+
+
+    <div class="calculator">
+        <h2>Расчёт стоимости</h2>
+        <div>
+            <form action="#">
+                <p>ТИП САЙТА</p>
+                <select name="list" id="list">
+                    <option value="Opt1">Выберите пункт...</option>
+                    <option value="Opt2">1-ая</option>
+                    <option value="Opt3">2-ая</option>
+                </select>
+                <p>ДИЗАЙН</p>
+                <select name="list" id="list">
+                    <option value="Opt1">Выберите пункт...</option>
+                    <option value="Opt2">1-ая</option>
+                    <option value="Opt3">2-ая</option>
+                </select>
+                <p>АДАПТИВНОСТЬ</p>
+                <select name="list" id="list">
+                    <option value="Opt1">Выберите пункт...</option>
+                    <option value="Opt2">1-ая</option>
+                    <option value="Opt3">2-ая</option>
+                </select>
+            </form>
+        </div>
+        <hr>
+        <h4>Сроки<span>0</span></h4>
+        <br>
+        <h4>Стоимость<span>0</span></h4>
+    </div>
+
+    <div class="static">
+        <span>
+            <h2>НЕМНОГО СТАТИСТИКИ</h2>
+        </span>
+        <img src="img/trait.png" alt="">
+        <div class="center_static">
             <div>
-                <p> <b>CLIENT:</b><br>какая-то компания </p>
-                <p> <b>WEBSITE:</b><br>https://www.somedomain.com </p>
+                <img src="img/smail.png" alt="">
+                <h4><b>0</b><br>счастливых клиентов</h4>
+            </div>
+            <div>
+                <img src="img/scob2.png" alt="">
+                <h4><b>0</b><br>часов работы</h4>
+            </div>
+            <div>
+                <img src="img/chek.png" alt="">
+                <h4><b>0</b><br>проектов завершено</h4>
+            </div>
+            <div>
+                <img src="img/cup.png" alt="">
+                <h4><b>0</b><br>наград получено</h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="otziv">
+        <h2>ОТЗЫВЫ</h2>
+        <img src="img/trait.png" alt="">
+        <br>
+        <img src="img/otzivava.jpg" class="ava" alt="#" style="width: 150px;">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam laboriosam aperiam cumque odit,
+            <br>corporis optio saepe eius accusantium ipsam perspiciatis!
+        </p>
+        <p><b>Имя,</b> должность, компания.</p>
+        <div>
+            <span class="activ_dot dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+    
+    <div class="phon_contact">
+        <div class="contact">
+            <span>
+                <h2>МОИ КОНТАКТЫ</h2>
+            </span>
+            <img src="img/trait.png" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <div class="center_contact">
                 <div>
-
-                    <p> <b>Название проекта</b><br>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        <br>Cupiditate, asperiores quibusdam. <br>Molestias, fugit odio dignissimos amet quo consequatur
-                        laboriosam incidunt.
-                    </p>
+                    <img src="img/geo.png" alt="">
+                    <p>Протвино<br>улица Гагарина 12 </p>
                 </div>
-                <input type="submit" value="VISIT LIVE SITE">
-            </div>
-
-            <div class="calculator">
-                <h1>Расчёт стоимости</h1>
                 <div>
-                    <form action="#">
-                        <p>ТИП САЙТА</p>
-                        <select name="list" id="list">
-                            <option value="Opt1">Выберите пункт</option>
-                        </select>
-                        <p>ДИЗАЙН</p>
-                        <select name="list" id="list">
-                            <option value="Opt1">Выберите пункт</option>
-                        </select>
-                        <p>АДАПТИВНОСТЬ</p>
-                        <select name="list" id="list">
-                            <option value="Opt1">Выберите пункт</option>
-                        </select>
-                    </form>
+                    <img src="img/sms.png" alt="">
+                    <p>zhukov97@yandex.ru</p>
                 </div>
-                <img src="img/%D0%BB%D0%B8%D0%BD%D0%B8%D1%8F%20%D0%BF%D0%BE%D0%B4%D0%B8%D1%82%D0%BE%D0%B3%D0%B0.png"
-                    alt="">
-                <h4>Сроки</h4>0
-                <h4>Стоимость</h4>0
-            </div>
-
-            <div class="static">
-                <span>
-                    <h2>НЕМНОГО СТАТИСТИКИ</h2>
-                </span>
-                <img src="img/trait.png" alt="">
                 <div>
-                    <img src="img/smail.png" alt="">
-                    <h4><b>0</b><br>счастливых клиентов</h4>
-                    <img src="img/scob2.png" alt="">
-                    <h4><b>0</b><br>часов работы</h4>
-                    <img src="img/chek.png" alt="">
-                    <h4><b>0</b><br>проектов завершено</h4>
-                    <img src="img/cup.png" alt="">
-                    <h4><b>0</b><br>наград получено</h4>
-                </div>
+                    <img src="img/telephon.png" alt="">
+                    <p>+7 999 999-99-99</p>
+                </div>    
             </div>
+        </div>
 
-            <div class="otziv">
-                <img src="img/avatar1.png" alt="">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam laboriosam aperiam cumque odit,
-                    <br>corporis optio saepe eius accusantium ipsam perspiciatis!
-                </p>
-                <p><b>Имя,</b> должность, компания.</p>
-            </div>
+        <div class="application">
+            <p>Оставьте мне сообщение</p>
+            <form action="">
+                <input type="text" name="Text_imput" value="" placeholder="Введите ваше имя">
+                <input type="mail" placeholder="Введите ваш Email">
+                <br>
+                <textarea name="namel" id="" placeholder="Сообщение" cols="30" rows="10"></textarea>
+                <br>
+                <input type="submit" value="Отправить">
+            </form>
+        </div>
+        <div class="icons_soc">
+            <img src="img/facebook.png" alt="">
+            <img src="img/twitter.png" alt="">
+            <img src="img/instagram.png" alt="">
+        </div>
+    </div>
 
-            <div class="contact">
-                <span>
-                    <h2>МОИ КОНТАКТЫ</h2>
-                </span>
-                <img src="img/trait.png" alt="">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos omnis minus voluptatibus
-                    distinctio veritatis laborum, vitae excepturi, voluptates tempora magni!</p>
-                <img src="img/geo.png" alt="">
-                <p>Протвино<br>улица Гагарина 12 </p>
-                <img src="img/sms.png" alt="">
-                <p>zhukov97@yandex.ru</p>
-                <img src="img/telephon.png" alt="">
-                <p>+7 999 999-99-99</p>
-            </div>
+    <h3>My Google Maps Demo</h3>
 
-            <div class="application">
-                <form action="">
-                    <input type="text" name="Text_imput" value="" placeholder="Введите ваше имя">
-                    <input type="mail" placeholder="Введите ваш Email">
-                    <textarea name="namel" id="" cols="30" rows="10" >
-                </textarea>
-                    <input type="submit" value="отправить">
-                </form>
-            </div>
+    <div>
+        Карта
+    </div>
 
-            <div>
-                <img src="img/facebook.png" alt="">
-                <img src="img/twitter.png" alt="">
-                <img src="img/instagram.png" alt="">
-            </div>
-
-            <h3>My Google Maps Demo</h3>
-
-            <div>
-                Карта
-            </div>
-            
-            <div>
-                <p>Copyright © 2022 Андрей Жуков. Design by Web</p>
-            </div>
+    <div class="nav_end">
+        <p>Copyright © 2022 Андрей Жуков. Design by Web</p>
+    </div>
 
 </body>
 
